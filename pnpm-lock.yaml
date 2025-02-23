@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      sync-input:
+        specifier: https://codeload.github.com/hyperskill/sync-input/tar.gz/refs/tags/v1
+        version: https://codeload.github.com/hyperskill/sync-input/tar.gz/refs/tags/v1
+
+packages:
+
+  sync-input@https://codeload.github.com/hyperskill/sync-input/tar.gz/refs/tags/v1:
+    resolution: {tarball: https://codeload.github.com/hyperskill/sync-input/tar.gz/refs/tags/v1}
+    version: 1.0.0
+
+snapshots:
+
+  sync-input@https://codeload.github.com/hyperskill/sync-input/tar.gz/refs/tags/v1: {}
