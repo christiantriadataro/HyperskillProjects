@@ -1,18 +1,18 @@
-const input = require('sync-input')
+// import input from 'sync-input'
 
-function toCapitalize(word) {
+function toCapitalize(word: string): string {
     return word.charAt(0).toUpperCase() + word.slice(1);
 }
 
-function repUnderscoreSpace(word) {
+function repUnderscoreSpace(word: string): string {
     return word.split('_').join(' ')
 }
 
-function modifyString(word) {
+function modifyString(word: string): string {
     return toCapitalize(repUnderscoreSpace(word))
 }
 
-function sum(object) {
+function sum(object: object) {
     let sum = 0;
     for (const key in object) {
         sum += Number(object[key])
@@ -20,7 +20,14 @@ function sum(object) {
     return sum;
 }
 
+interface IMenuProps {
+    [index: string]: number
+}
+
 class Cafe {
+    private readonly menu: IMenuProps;
+    private readonly earned_amount: IMenuProps
+    private readonly expenses: IMenuProps;
     constructor() {
         this.menu = {
             bubblegum: 2,           // input("Bubblegum Price: "),
